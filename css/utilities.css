@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #28a745;
+    --secondary-color:  #0284d0;
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+  }
+
+/* Text colors */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color:  var(--primary-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary, .bg-primary {
+  color: var(--secondary-color);
+  background-color:  var(--primary-color);
+}
+
+.btn-secondary, .bg-secondary {
+ background: var(--secondary-color);
+ color: white;
+}
+
+.btn-dark, .bg-dark {
+ background: var(--dark-color);
+ color: white;
+}
+
+.btn-light, .bg-light {
+ background: #f4f4f4;
+ color:  var(--dark-color);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+}
