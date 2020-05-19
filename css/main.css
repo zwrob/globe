@@ -27,17 +27,53 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
-    font-size: 6rem;
+h1 , h2 {
     font-weight: bold;
+    line-height: 1.5;
 }
+
+h1 {
+    font-size: 6rem;;
+}
+
+h2 {
+    font-size: 4rem;;
+}
+
+h3 {
+    font-size: 3rem;;
+}
+
+h4 {
+    font-size: 2rem;;
+}
+
+
+
 p {
     font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+ul {
+    list-style: none;
 }
 
 .page {
     display: flex;
     flex-direction: column;
+}
+
+i {
+    margin-right: .6rem;;
+}
+
+section {
+    padding: 1rem 0;
 }
 
 /* Header */
@@ -50,15 +86,22 @@ p {
     transform-style: inherit;
     text-align: center;
     z-index: -1;
+    color: white;
 }
 
-#header h1 {
-    margin-top: -160px;
-    color: var(--primary-color);
+#header .content {
+    margin-top: -180px;
+}
+
+#header > a {
+    margin-top:6rem;
 }
 
 #header p {
-    color: var(--secondary-color);
+    font-size: 3rem;
+}
+#header h1 {
+    font-size: 7rem;
 }
 
 #header, #header:before {
@@ -75,7 +118,7 @@ p {
     min-height: 100vh;
     z-index: -2;
     content: '';
-    background-image: url("/img/brown-on-seashore-near-mountain-1007657.jpg");
+    background-image: url("/img/sky-sunset-beach-vacation-60217.jpg");
     background-size: cover;
     /*przesuwające się tło */
     transform-origin: center center 0;
@@ -87,6 +130,7 @@ p {
 .logo {
     display: flex;
     color: var(--secondary-color);
+    font-size: 1.2rem;
 }
 
 .logo:hover {
@@ -146,7 +190,6 @@ p {
 
 #navbar ul {
     display: flex;
-    list-style: none;
     font-size: 2rem;
 }
 
@@ -157,12 +200,24 @@ p {
 #navbar ul li a {
     text-decoration: none;
     color: black;
+    border-bottom: 3px transparent solid;
+    padding-bottom: .5rem;
+    transition: border-color .5s;
 }
 
+#navbar ul li a:hover {
+    border-color: var(--secondary-color);
+}
+
+#navbar ul li a.current {
+    border-color: var(--primary-color);
+}
 
 
 #main {
     flex:1;
+    display: flex;
+    flex-direction: column;
 }
 
 #footer {
@@ -174,4 +229,105 @@ p {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* recommended-directions */
+.recommended-directions {
+    position: relative;
+    width: 100%;
+}
+
+
+.recommended-directions *  {
+    color: white;
+}
+
+.recommended-directions img {
+    height: 50rem;
+    margin-left: 10rem;
+}
+
+.recommended-directions .about-content {
+    position: absolute;
+    top:10%;
+    left: 20%;
+    height: 70%;
+    width: 80%;
+    background: rgba(4, 91, 163, 0.5);
+   /* background: linear-gradient(90deg, rgba(0,212,255,.5) 5%, rgba(18,140,172,.6) 63%, rgba(3,65,135,.7) 100%);*/
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recommended-directions .about-content .title {
+    flex: 0 0 8rem;
+    width: 100%;
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+
+.recommended-directions .about-content .list {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+.recommended-directions .about-content .list ul {
+    margin: 1rem 2rem;
+    width: 100%;
+}
+.recommended-directions .about-content .list ul li {
+    margin: 1rem;
+    padding: 0 1rem;
+}
+
+.recommended-directions .about-content .list ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color .5s;
+}
+
+.recommended-directions .about-content .list ul li:hover {
+    background: rgba(64, 120, 167, 0.5);
+}
+
+.recommended-directions .about-content .info {
+    background-color:  rgba(4, 91, 163, 1);
+    width: 100%;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.recommended-directions .about-content .info ul {
+    width: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+/*  about */
+.about {
+ background-color: var(--secondary-color);
+ width: 100%;
+}
+
+.about *  {
+    color: white;
+}
+
+/* testimonials */
+.testimonials {
+    display: flex;
 }
