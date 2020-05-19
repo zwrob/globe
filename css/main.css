@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+
+/*  normalizacja układu strony*/
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* podstawowa wielkośc frontu - 10px*/
+html {
+    font-size: 62.5%;   /* 10px */
+    line-height: 1.6;
+    height: 100%;
+    overflow: hidden;
+}
+    
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #333;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    flex:  0 0 100%;
+    background: yellow;
+    position: relative;
+}
+
+.main {
+    flex:1;
+}
+
+.footer {
+    flex : 0 0 20px;
+    padding: .5rem;
+    text-align: center;
+    background: red;
+    color: white;
+}
