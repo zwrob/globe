@@ -118,7 +118,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: .6rem;
+}
+#navbar >div >a {
+    display: flex;
+    align-items: center;
+}
+
+#navbar >div >a div {
+    text-align: left;
 }
 
 #navbar .nav-elements {
@@ -188,6 +196,10 @@ body {
 }
 
 /* recommended-directions */
+#recommended-directions {
+    background: rgb(226, 232, 236);
+}
+
 .recommended-directions {
     position: relative;
     width: 100%;
@@ -220,7 +232,7 @@ body {
 }
 
 .recommended-directions .about-content .title {
-    flex: 0 0 8rem;
+    flex: 0 0 6rem;
     width: 100%;
     margin-left: 10rem;
     margin-top: 2rem;
@@ -267,7 +279,6 @@ body {
 
 .recommended-directions .about-content .info ul {
     width: 70%;
-
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -282,6 +293,83 @@ body {
 
 .about *  {
     color: white;
+}
+
+/* best proces*/
+#best-prices {
+    width: 100%;
+}
+
+.best-prices {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.best-prices .card {
+    flex: 1;
+    border: 1px solid var( --light-color);
+    height: 36rem;
+    margin: 2rem;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.best-prices .card .image {
+    transform: translateZ(0);
+    display: block;
+}
+
+.best-prices .card:hover .image img {
+    transform: scale(1.2);
+}
+
+.best-prices .card .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.best-prices .card .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: white;
+    text-align: left;
+    padding: 1rem;
+}
+
+.best-prices .card .info >div {
+    position: absolute;
+    right: 10px;
+    top: -40px;
+    border-radius: 50%;
+    background: white;
+    width: 7rem;
+    height: 7rem;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.best-prices .card .info li:last-child {
+    margin-top: .6rem;
+    text-align: right;
+    color: var(--secondary-color);
+
+}
+
+.best-prices .card .info li:last-child * {
+    font-size: 2.5rem;
 }
 
 /* testimonials */

@@ -2,11 +2,11 @@
     --primary-color: #28a745;
     --secondary-color:  #0284d0;
     --dark-color: #333;
-    --light-color: #f4f4f4;
+    --light-color: #eceaea;
 }
 
 
-h1 , h2 {
+h1 , h2, h3 {
   font-weight: bold;
   line-height: 1.5;
 }
@@ -24,11 +24,11 @@ h3 {
 }
 
 h4 {
-  font-size: 2rem;;
+  font-size: 2rem;
 }
 
-h4 {
-  font-size: 1.5rem;;
+h5 {
+  font-size: 1.5rem;
 }
 
 
@@ -50,9 +50,11 @@ ul {
   flex-direction: column;
 }
 
+
 i {
-  margin-right: .6rem;;
+  margin-right: .6rem;
 }
+
 
 section {
   padding: 1rem 0;
