@@ -1,0 +1,8 @@
+/* Navbar */
+#navbar {
+    position: relative;
+}
+
+#navbar >div  {
+    flex-direction: column;
+}

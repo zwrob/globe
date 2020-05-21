@@ -120,6 +120,7 @@ body {
     justify-content: space-between;
     padding: .6rem;
 }
+
 #navbar >div >a {
     display: flex;
     align-items: center;
